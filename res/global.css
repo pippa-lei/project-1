@@ -1,0 +1,12 @@
+div.richtext{
+
+  font-family: 'Arial','Helcertica','Roboto',sans-serif;
+  font-size:0.8em;
+        line-height:1.8em;
+        background:#dcdffd;
+        color:#000;
+        padding:50px;
+      }
+
+h1{font-weight:normal;}
+    h5{font-style:italic;}
