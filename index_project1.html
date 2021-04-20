@@ -3,57 +3,170 @@
   <head>
     <title>Labobamilktea</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
-    <style>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;700&display=swap" rel="stylesheet">
+    <style type="text/css" media="screen">
       body{
-        font-family:'Shippori Mincho B1''Arial','Helvetica','Roboto',sans-serif;
+        font-family:'Shippori Mincho B1','Arial','Helvetica','Roboto',sans-serif;
+        width:100%;
         margin:0;
         padding:0;
+        overflow-x:auto;
+        overflow-y: auto;
       }
 
- div.hero{
-   width:100vw; height: 100vh;
-   background-image: url(res/web-design.bobatea1.jpg); url(res/1x/bobatea.3Asset 3-50.jpg)
-   background-size: cover;
-   background-position: center center;
-   position: absolute;
- }
-div.hero-txt{
+div.mainframe{
+  max-width:1200px;
+  margin:0 auto;
+  }
+div.slide{
+  min-height:100vh;
+  position:relative;
+}
+div.layer{
   position:absolute;
-  display:block;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  padding:4vw;
+  top:0; left:0; right:0; bottom:0;
+  font-size:3em;
+  background-repeat:no-repeat;
 }
- div.hero h1{font-size: 6em;
- }
-div.hero h2{font-size: 2em;
+
+
+div.layer.a1{background-size:30%; background-position:0% 50%;}
+div.layer.a2{background-size:15%; background-position:50% 80%;}
+div.layer.a3{background-size:30%; background-position:125% 20%;}
+div.layer.a4{background-size: 40%; background-position: -3% 100%;bottom: -28%;}
+
+
+
+div.layer.a5{background-size:20%; background-position:80% 130%;}
+div.layer.a8 {background-size: 50%;background-position: 102% 88%;}
+div.layer.a9{background-size: 70%;background-position: -60% 88%;}
+
+
+
+div.layer.a6{
+  top:25%;
+  left:35%;
+  right:30%;
+  bottom:30%;
 }
-div.hero h3{font-size:2em;}
-div.hero p{font-size:1em;}
-div.example{
-  padding:10px 40px;
+
+div.layer.a6 h1{font-size:200%;
 }
-div.custom{
-  grid-row-start:1;
-  grid-row-end:4;
+div.layer.a6 h2{font-size:65%;
 }
+div.txt h3{font-size:45%;}
+div.txt p{font-size:2%;}
+
+
+
+div.slide div.txt {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 30%;
+}
+div.slide div.layer.a16.txt {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 30%;
+}
+div.layer.a16 h4{
+  font-size:45%;
+}
+div.slide div.layer.a17.txt {
+    position: absolute;
+    top: 0%;
+    left: 42%;
+    width: 30%;
+}
+div.layer.a17 h4{
+  font-size:45%;
+}
+div.slide div.layer.a18.txt {
+    position: absolute;
+    top: 0%;
+    left: 72%;
+    width: 30%;
+}
+div.layer.a18 h4{
+  font-size:45%;
+}
+div.cardholder{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:10px;
+
+}
+div.card.1{
+
+  background:rgba(255,25,255,0.3);
+  padding:10px 10px 10px 10px;
+}
+div.card.2{
+  grid-row-start:4;
+  grid-row-end:6;
+  padding:10px 10px 10px 10px;}
+div.card.1 div.img{background-size:0%;background-position:15% 20%;}
+div.card.2 div.img{background-size:15%;background-position:15% 96%;}
+div.layer.a12{background-size:20%;background-position:55% 20%;}
+div.layer.a13{background-size:15%;background-position:55% 95%;}
+div.layer.a14{background-size:25%;background-position:85% 20%;}
+div.layer.a15{background-size:15%;background-position:85% 96%;}
+
+
     </style>
   </head>
   <body>
 
-<div class="hero">
-  <div class="hero-txt">
-  <h1>LABoba</h1>
-  <h2>No-cook Instant Bubble Tea</h2>
-</div>
-    <img src="res/web-design.bobatea1.jpg" alt="bobatea1">
 
-  <div calss="example"><h3>Introduction</h3></div>
-  <div class="example custom"><p>Chewy tapioca pearls infused with the sweet, aromatic and exotic flavour of brown sugar. You can now enjoy your favourite topping on anything you like!</P></div>
-  <div class="example custom"><p>The world's fastest, healthiest and easiest way to make bubble tea. Make bubble tea perfectly every time and don't worry about your cooking.</p></div>
-    <img src="res/1x/bobatea.3Asset 3-50.jpg" alt="bobatea2">
+
+<div class="mainframe">
+  <div class="slide">
+    <div class="layer a1" style="background-image:url('res/SVG/Asset 11.svg');"></div>
+    <div class="layer a2" style="background-image:url('res/SVG/Asset 11.svg');"></div>
+    <div class="layer a3" style="background-image:url('res/SVG/Asset 12.svg');"></div>
+    <div class="layer a4" style="background-image:url('res/SVG/Asset 13.svg');"></div>
+    <div class="layer a5" style="background-image:url('res/SVG/Asset 14.svg');"></div>
+
+    <div class="layer a6">
+      <h1>LABoba</h1>
+      <h2>No-cook Instant Bubble Tea</h2>
+    </div>
+  </div>
+
+  <div class="slide">
+      <div class="layer a9" style="background-image:url('res/SVG/Asset 16.svg');"></div>
+      <div class="txt layer a7">
+
+        <h3>Introduction</h3>
+        <p>Chewy tapioca pearls infused with the sweet, aromatic and exotic flavour of brown sugar. You can now enjoy your favourite topping on anything you like!</p>
+        <p>The world's fastest, healthiest and easiest way to make bubble tea. Make bubble tea perfectly every time and don't worry about your cooking.</p>
+      </div>
+      <div class="layer a8" style="background-image:url('res/SVG/Asset 15.svg');"></div>
+  </div>
+</div>
+
+ <div class="slide">
+  <div class="cardholder" >
+   <div class="card.1">
+    <div class="txt layer a16">
+     <h4>Taro Oat Milk Tea</h4>
+    </div>
+    </div>
+    <div class="img" style="background-image:url('res/taro oat milk.png');"></div>
+ </div>
+
+    <div class="txt layer a17">
+     <h4>Black Sugar Milk Tea</h4>
+    </div>
+   <div class="txt layer a18">
+    <h4>Grass Jelly Pudding</h4>
+   </div>
+
+
+
+</div>
 </div>
   </body>
 </html>
